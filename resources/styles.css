@@ -1,0 +1,20 @@
+.background {
+  viewport-fill: #444444;
+}
+
+.time {
+  font-size: 60;
+  font-family: Colfax-Black;
+  text-length: 32;
+  text-anchor: end;
+  x: 100%-8;
+  y: 50;
+  fill: white;
+}
+
+.time-shadow {
+  x: 100%-6;
+  y: 52;
+  fill: black;
+}
+

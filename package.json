@@ -1,0 +1,18 @@
+{
+  "fitbit": {
+    "appType": "clockface",
+    "appDisplayName": "sdk-photo-picker",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
+    "i18n": {
+      "en": {
+        "name": "sdk-photo-picker"
+      }
+    }
+  }
+}
