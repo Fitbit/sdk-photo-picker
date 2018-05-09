@@ -21,7 +21,7 @@ me.onunload = saveSettings;
 
 clock.granularity = "minutes";
 
-clock.ontick = (evt) => {
+clock.ontick = evt => {
   let today = evt.date;
   let hours = today.getHours();
   if (preferences.clockDisplay === "12h") {
@@ -33,7 +33,7 @@ clock.ontick = (evt) => {
   let timeString = `${hours}:${mins}`;
   labelTime.text = timeString;
   labelTimeShadow.text = timeString;
-}
+};
 
 inbox.onnewfile = () => {
   let fileName;
@@ -52,7 +52,7 @@ inbox.onnewfile = () => {
 function loadSettings() {
   try {
     mySettings = fs.readFileSync(SETTINGS_FILE, SETTINGS_TYPE);
-  } catch(ex) {
+  } catch (ex) {
     mySettings = {};
   }
   applySettings();
